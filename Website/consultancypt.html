@@ -100,6 +100,7 @@
                                        <a href="1stSaLLyDay.html" style="font-size: 13px;">1stSaLLy Day</a>
                                        <a href="2ndSaLLyDay.html" style="font-size: 13px;">2ndSaLLy Day</a>
                                        <a href="AIMM2024.html" style="font-size: 13px;">AIMM 2024</a>
+                                       <a href="3rdSaLLyDay.html" style="font-size: 13px;">3rd SaLLy Day</a>
                                     </div>
                                  </li>
                                  <li class="nav-item">
@@ -284,18 +285,20 @@
                   </div>
                </div>
                </div>
-            <div class="copyright">
+           <div class="copyright">
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <p>SaLLy Lab UFBA &copy; 2020-2024</p>
+                        <p>SaLLy Lab UFBA &copy; 2020-<span id="spanYear"></span></p>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-   </div>
       </footer>
+      <!-- Data automática para footer -->
+      <script>
+         $('#spanYear').html(new Date().getFullYear());
+      </script>
       <!-- end footer -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
